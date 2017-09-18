@@ -1,0 +1,8 @@
+body{
+	background: blue;
+  /*background: rgb(255,0,0); 
+	background: rgba(25,46,88,0.5); la a va del 0 al 1, es la transparencia
+	background: #1A45AB;*/
+	color: black;
+	width: 1024px;
+}
