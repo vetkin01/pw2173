@@ -1,8 +1,57 @@
-body{
-	background: blue;
-  /*background: rgb(255,0,0); 
-	background: rgba(25,46,88,0.5); la a va del 0 al 1, es la transparencia
-	background: #1A45AB;*/
-	color: black;
+
+
+body {
+	border: 1px solid red;
+	margin: 0 auto;
 	width: 1024px;
 }
+
+
+header {
+	border: 1px solid blue;
+	text-align: center;
+}
+
+header img {
+	float: right;
+	margin-right: 15px;
+	margin-top: -60px;
+	width: 90px;
+}
+
+header nav ul li {
+	background: blue;
+	border-radius: 5px;
+	box-shadow: 3px 3px black;
+	color: white;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	padding: 5px 8px 5px 8px;
+	width: 80px;
+}
+
+header nav {
+	margin-top: 80px;
+}
+header nav ul li:hover{
+	background: orange;
+	color: black;
+}
+
+section article{
+	border: 1px solid tomato;
+	display: inline-block;
+	width: 32%;
+	vertical-align: top;
+
+
+}
+footer{
+	text-align: center;
+	color: white;
+	margin-top: 3px;
+	background-color: black;
+}
+
+
+
