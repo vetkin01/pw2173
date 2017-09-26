@@ -1,6 +1,56 @@
-body{
+body
+{
 	border:1px solid blue;
-	font-size: 16px;
+	font-size: 16px; /*1em*/
 	margin: 0 auto;
 	max-width: 1024px;
+}
+form
+{
+	float: right;
+	margin-right: 15px;
+	margin-top: -37px;
+}
+form input 
+{
+	border-radius: 5px;
+
+}
+form input[type="button"]
+{
+	background: green;
+	color: white;
+}
+header
+{
+	background: #B3D8EB;
+}
+header nav
+{
+	background: #0E6CB0;
+	border-radius: 5px; /*hacer las esquinas circulares*/
+	margin: 0 auto;
+	padding: 1px 0px 1px 0px; /*arriba derecha abajo izquierda*/
+	width: 99%;
+}
+header nav ul li
+{
+	color: white;
+	display: inline-block; /*ponerlos a un lado del otro*/
+	margin-right: 20px;
+}
+#seccion1 article
+{
+	text-align: center;
+	margin-top: 15px;
+
+}
+#seccion1 article img
+{
+	border: 5px solid rgba(150,150,150,0.5);
+	width: 98%;
+}
+#logo /*es un id*/
+{
+	margin-top: -150px;
 }
