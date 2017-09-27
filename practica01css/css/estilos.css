@@ -31,7 +31,7 @@ header nav
 	border-radius: 5px; /*hacer las esquinas circulares*/
 	margin: 0 auto;
 	padding: 1px 0px 1px 0px; /*arriba derecha abajo izquierda*/
-	width: 99%;
+	width: 99%; /*qué porcentaja de la pagina abarcará */
 }
 header nav ul li
 {
@@ -49,6 +49,38 @@ header nav ul li
 {
 	border: 5px solid rgba(150,150,150,0.5);
 	width: 98%;
+}
+#seccion2 article
+{
+	display: inline-block; /*sirve para poner una article a un lado del otro*/
+	vertical-align: top; /*hace que el texto empiece de arriba hacia abajo*/
+	width: 32.8%; 
+}
+/*#seccion2 article input[type="submit"]   <--- PUEDE SER ESTO EN VEZ DE ".botones"
+{
+	background: white;
+	border-radius: 5px;
+	color: blue;
+	margin-left: 130px;
+}*/
+.botones
+{
+	border-radius: 5px;
+	background: white;
+	color: blue;
+	margin-left: 130px;
+}
+.unaSeccion,.otraSeccion
+{
+	font-weight: bold; /*negritas*/
+}
+.unaSeccion
+{
+	font-size: 4em;
+}
+.otraSeccion
+{
+	font-size: 2.5em;
 }
 #logo /*es un id*/
 {
