@@ -1,0 +1,22 @@
+body 
+{
+	font-size: 16px; /*em*/
+	margin: 0 auto ; /*el 0 es el espacio de arriba y abajo y "auto" es para centrar el contenido de body*/
+	max-width: 1078px; /*eso mide la barra de arriba*/
+}
+header input
+{
+	float: right;
+	margin-right: -220px;
+	margin-top: 10px;
+	position: relative; /*para ponerlo encima de la imagen*/
+}
+#granthams
+{
+	margin-top: 20px;
+	margin-left: 25px;
+}
+#paint
+{
+	float: right;
+}
