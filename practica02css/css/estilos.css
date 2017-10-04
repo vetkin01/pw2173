@@ -5,6 +5,11 @@ body
 	max-width: 1078px; /*eso mide la barra de arriba*/
 	min-width: 1078px;
 }
+form input[type="button"]
+{
+	background: green;
+	color: white;
+}
 header nav
 {
 	/*border: 1px solid red;*/ /*<-- Sirve de guia */
@@ -26,6 +31,12 @@ header input
 	margin-right: -220px;
 	margin-top: 10px;
 	position: relative; /*para ponerlo encima de la imagen*/
+}
+#boton
+{
+	background: #A3D948;
+	color: white;
+	font-weight: bold;
 }
 #bgoffer
 {
@@ -59,5 +70,65 @@ header input
 }
 #secc01art02
 {
+	margin-left: 50px;
 	width: 30%
 }
+#secc01art02 ul
+{
+	list-style: none; /*quita los . adicionales*/
+}
+#secc01art02 ul li:before /*afecta a los "li" antes del texto*/
+{
+	content: "•";
+	color: #F5B0CD;
+	margin-right: 8px;
+}
+#segundaseccion article
+{
+	text-align: right;
+	padding-right: 125px;
+}
+#terceraseccion article
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 23%
+}
+#terceraseccion article img 
+{
+	vertical-align: middle; /*Alineacion del texto*/
+}
+.colorrosa
+{
+	color: #FF0099;
+}
+.otrorosa
+{
+	color: #F5B0CD;
+}
+.colorverde
+{
+	color: #A3D948;
+}
+.colorazul
+{
+	color: #1AA0D6;
+}
+.distintotitulo
+{
+	font-size: 2em;
+}
+.nito
+{
+	font-weight: bold; /*negritas*/
+}
+.rosamediano
+{
+	font-size: 2em;
+}
+.rosagrande
+{
+	font-size: 3.5em;
+}
+
+
