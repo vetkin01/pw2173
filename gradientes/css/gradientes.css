@@ -1,0 +1,57 @@
+article
+{
+	/*border: 1px solid blue;*/
+	border-radius: 10px;
+	height: 50px;
+	margin-top: 10px;
+	width: 150px;
+}
+body
+{
+	font-size: 16px; /*1em*/
+	margin: 0 auto;
+	padding-left: 700px;
+	max-width: 1024px;
+}
+article
+{
+	text-align: center;
+}
+#uno
+{
+	/*Si no soporta gradientes*/
+	background: red;
+	/*Opera*/
+	background: -o-linear-gradient(red,blue);
+	/*Safari*/
+	background: -webkit-linear-gradient(red,blue);
+	/*FireFox*/
+	background: -moz-linear-gradient(red,blue);
+	/*Para todos*/
+	background: linear-gradient(red,blue);
+}
+#dos
+{
+	/*background: red;*/
+	background: linear-gradient(to left,red,blue);
+}
+#tres
+{
+	background: red;
+	background: linear-gradient(to right,red,blue);
+}
+#cuatro
+{
+	background: red;
+	background: linear-gradient(to bottom, red,blue);
+}
+#cinco
+{
+	background: red;
+	background: linear-gradient(to right bottom, red,blue);
+}
+#seis
+{
+	background: red;
+	background: linear-gradient(to left bottom,red,blue);
+}
