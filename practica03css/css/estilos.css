@@ -20,6 +20,7 @@ header nav
 }
 input[type="button"]
 {
+	border-radius: 1px solid blue;
 	background: rgb(200,200,200);
 	border-radius: 8px;
 	color: white;
@@ -27,6 +28,7 @@ input[type="button"]
 }
 #art1
 {
+
 	margin-left: 1px;
 	width: 44%
 }
@@ -54,6 +56,7 @@ input[type="button"]
 }
 #secc1
 {
+
 	height: 318px;
 	margin-top: 1px;	
 }
