@@ -1,43 +1,100 @@
-/*Imagen con atributo alt*/
-img[alt]
-{
+/*imagen con atributo alt*/
+img[alt=""]{
 	border: 5px solid blue;
 }
-/*Imagen con atributo SRC cadena exacta*/
-img[src="img/alerta.png"]
-{
+/*imagen con tributo src cadena exacta*/
+img[src="img/alerta.png"]{
 	width: 400px;
 }
-/*Imagen con atributo SRC con el inicio de la cadena*/
-img[src^="img/al"]
-{
+/*^ = circunflejo*/
+/*imagen con atributo src con el inicio de la cadena*/
+img[src^="img"]{
 	width: 150px;
 }
-/*Imagen con el atributo SRC al final de la cadena*/
-img[src$="ng"]
-{
-	width: 50px;
+/*imagen con el atributo src al final de la cadena*/
+img[src$="png"]{
+	width: 150px;
 }
-/*Imagen con el atributo SRC en cualquier parte de la cadena*/
-img[src*="erta"]
-{
+/*imagen con el atributo src en cualquier parte de la cadena*/
+img[src*="mg/"]{
 	width: 1000px;
 }
-/*El caracter ~ indica que estos selectores en este article estan separados por expacio*/
-article[class~="resaltado"]
-{
+/*el caracter ~ indica que estos selectores*/
+/*en este article estan separados por espacios*/
+article[class~="resaltado"]{
 	border: 1px dashed blue;
 }
-article[class~="archivo"]
-{
+article[class~="archivo"]{
 	border: 1px dashed red;
 }
-article[class~="ingles"]
-{
+article[class~="ingles"]{
 	border: 1px dashed green;
 }
-/*El atributo id es una lista de valores separados por guiones, pero solo si el valor mas a la izquierda es ingles*/
-article[id|=ingles]
-{
+/*El atributo id es una lista de valores separados
+por guiones, pero solo si el valor mas a la
+izquierda es ingles*/
+article[class|="ingles"]{
 	text-align: center;
+}
+/*selector de secundarios para seleccionar
+solamente el(los) <p> que se encuentran
+inmediatamente despues del <div>*/
+div > p { /*solo los hijos directos*/
+	color: blue;
+}
+/*todos los elementos <p> seran seleccionados*/
+div p{
+	color: red;
+}
+/*seleccionar solo el elemento <p> que estan inmediatamente
+despues del elemento <h2> Hermano adyacente*/
+h2 + p{
+	color: green;
+}
+/*Seleccionar todos los hermanos del tipo de elemento
+especificado... Hermano general*/
+h2 ~ p{
+	color: grey;
+}
+/*Poner en color rojo el texto de los section
+menos el id="referencias"*/
+#resumen,#experimento,#pruebas,#resultados,#concluciones
+{
+	color: tomato;
+}
+/*Seleccinar todos menos la que no quiero*/
+section:not(#referencias)
+{
+	color: hotpink;
+}
+/*Seleccionar elemento LI pares e impares*/
+li:nth-child(odd) /*Impar*/
+{
+	color: green;
+}
+li:nth-child(even) /*Par*/
+{
+	color: blue;
+}
+li:nth-child(5) /*Quinto elemento*/
+{
+	color: red;
+}
+li:nth-last-child(1) /*ultimo elemento hacia arriba*/
+{
+	color: yellow;
+}
+/*Primer y el último elemento*/
+article:first-child /*nth-child(1)*/
+{
+	color: blue;
+}
+article:last-child
+{
+	color: yellow;
+}
+p:first-line;
+{
+	font-weight: bold;
+	text-transform: capitalize;
 }
