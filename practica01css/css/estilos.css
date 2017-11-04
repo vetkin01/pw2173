@@ -31,7 +31,7 @@ header nav
 	border-radius: 5px; /*hacer las esquinas circulares*/
 	margin: 0 auto;
 	padding: 1px 0px 1px 0px; /*arriba derecha abajo izquierda*/
-	width: 99%; /*qué porcentaja de la pagina abarcará */
+	width: 99%; /*qué porcentaje de la pagina abarcará */
 }
 header nav ul li
 {
