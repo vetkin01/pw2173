@@ -7,9 +7,11 @@ body
 }
 form
 {
+
 	border: 1px solid black;
 	border-radius: 5px;
 	background: blue;
+	margin:0 auto;
 	padding: 2px;
 	width: 152px;
 
