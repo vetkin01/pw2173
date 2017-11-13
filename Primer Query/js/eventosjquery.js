@@ -18,6 +18,11 @@ var inicia = function()
 		     $("#foto").attr("src",data.results[0].picture.large);
 		     $("#email").html(data.results[0].email);
 		     $("#dob").html(data.results[0].dob);
+		     $("#phone").html(data.results[0].phone);
+		     $("#location").html(data.results[0].location.street+", "+
+		     					data.results[0].location.city+", "+
+		     					data.results[0].location.state+", "+
+		     					data.results[0].location.postcode	);
 		  	  }
 		});
 	}
