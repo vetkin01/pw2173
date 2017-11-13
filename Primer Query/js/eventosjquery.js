@@ -13,13 +13,13 @@ var inicia = function()
 	 	  {
 		 	//alert(data.results[0].name.first+" "+data.results[0].name.last);
 		     //console.log(data);
-		     $("#nombre").html(data.results[0].name.first+" "+
+		     $("#nombre").html("Nombre: "+data.results[0].name.first+" "+
 		       				 data.results[0].name.last);
 		     $("#foto").attr("src",data.results[0].picture.large);
-		     $("#email").html(data.results[0].email);
-		     $("#dob").html(data.results[0].dob);
-		     $("#phone").html(data.results[0].phone);
-		     $("#location").html(data.results[0].location.street+", "+
+		     $("#email").html("Email: "+data.results[0].email);
+		     $("#dob").html("Fecha de nacimiento: "+data.results[0].dob);
+		     $("#phone").html("Celular: "+data.results[0].phone);
+		     $("#location").html("Direccion: "+data.results[0].location.street+", "+
 		     					data.results[0].location.city+", "+
 		     					data.results[0].location.state+", "+
 		     					data.results[0].location.postcode	);

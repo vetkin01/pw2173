@@ -16,6 +16,10 @@ form
 	width: 152px;
 
 }
+#sec1
+{
+	display: inline-block;
+}
 /*form 
 {
 	background: gray;
