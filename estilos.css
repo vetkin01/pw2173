@@ -1,0 +1,17 @@
+body
+{
+	background: blue;
+	font-size: 16px;
+	max-width: 1024px;
+
+}
+#ltsUsuarios
+{
+	width: 80%;
+}
+#lstUsuarios li
+{
+	background: red;
+	color: black;
+	
+}
