@@ -1,6 +1,14 @@
 const {BrowserWindow}=require('electron').remote
 const app=require('electron').app;
 const $ = require('jquery');
+//Constantes para llamar al PDF
+const ipc=require('electron').ipcRenderer
+const botonPDF=document.getElementById('btnPDF')
+//Activamos el evento click del boton btnPDF
+botonPDF.addEventListener('click',function(event){
+	botonPDF.style.display="none"
+	ipc.send('print-to-pdf')
+})
 
 var nombre=require('electron').remote.getGlobal('infoUsuarios').nombre;
 var genero=require('electron').remote.getGlobal('infoUsuarios').genero;
